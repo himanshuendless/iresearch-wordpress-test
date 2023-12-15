@@ -1,0 +1,37 @@
+.ticket-book-cf7 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Adjust the spacing between checkboxes */
+}
+
+.ticket-book-cf7 label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(100% / 3 - 10px); /* Adjust for 3 columns layout */
+    line-height: 1.5;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.ticket-book-cf7 input[type="checkbox"] {
+    margin-right: 5px;
+}
+.ticket-book-cf7 label.disabled-label {
+    color: red;
+    cursor: not-allowed;
+}
+
+/* Styling for the submit button */
+.wpcf7-form input[type="submit"] {
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Optional: Style for hover effect on the submit button */
+.wpcf7-form input[type="submit"]:hover {
+    background-color: darkorange;
+}
